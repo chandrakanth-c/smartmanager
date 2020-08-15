@@ -1,8 +1,8 @@
-# smartmanager
+# Smartmanager
 
-This is a project management tool coded in Spring MVC framework.
-Backend is coded in java and frontend is coded in JSP.
-Data is stored in MySQL database.
+This is a project management tool coded in Spring MVC framework. <br/>
+Backend is coded in java and frontend is coded in JSP. <br/>
+Data is stored in MySQL database. <br/>
 
 # To run the project
 
