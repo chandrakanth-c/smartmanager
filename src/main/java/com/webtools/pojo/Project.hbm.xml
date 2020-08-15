@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 19 Apr 2020, 17:35:52 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.webtools.pojo.Project" table="PROJECT">
+        <id name="projectID" type="int">
+            <column name="PROJECTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="projectName" type="java.lang.String">
+            <column name="PROJECTNAME" />
+        </property>
+        <property name="startDate" type="java.lang.String">
+            <column name="STARTDATE" />
+        </property>
+        <property name="endDate" type="java.lang.String">
+            <column name="ENDDATE" />
+        </property>
+        <list name="members" inverse="false" table="MEMBER" lazy="true">
+            <key>
+                <column name="PROJECTID" />
+            </key>
+            <list-index></list-index>
+            <one-to-many class="com.webtools.pojo.Member" />
+        </list>
+        <list name="tasks" inverse="false" table="TASK" lazy="true" access="field">
+            <key>
+                <column name="PROJECTID" />
+            </key>
+            <list-index></list-index>
+            <one-to-many class="com.webtools.pojo.Task" />
+        </list>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15 Apr 2020, 18:11:47 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.webtools.pojo.User" table="usertable">
+        <id name="userid" type="int">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="uname" type="java.lang.String">
+            <column name="UserName" />
+        </property>
+        <property name="upassword" type="java.lang.String">
+            <column name="UserPassword" />
+        </property>
+    </class>
+</hibernate-mapping>

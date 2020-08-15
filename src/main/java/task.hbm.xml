@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 19 Apr 2020, 17:35:52 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.webtools.pojo.Task" table="tasktable">
+        <id name="taskID" type="int">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="taskName" type="java.lang.String">
+            <column name="TaskName" />
+        </property>
+        <property name="projectName" type="java.lang.String">
+            <column name="ProjectName" />
+        </property>
+        <property name="startDate" type="java.lang.String">
+            <column name="StartDate" />
+        </property>
+        <property name="endDate" type="java.lang.String">
+            <column name="EndDate" />
+        </property>
+        <property name="assignedTo" type="java.lang.String">
+            <column name="AssignedTo" />
+        </property>
+        <property name="assignedToEmail" type="java.lang.String">
+            <column name="AssignedToEmail" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="Status" />
+        </property>
+        <property name="comments" type="java.lang.String">
+            <column name="Comments" />
+        </property>
+        <property name="daysRemaining" type="int">
+            <column name="DaysRemaining" />
+        </property>
+        <many-to-one name="project" class="com.webtools.pojo.Project" fetch="join">
+            <column name="ProjectID" />
+        </many-to-one>
+        <one-to-one name="member" class="com.webtools.pojo.Member"></one-to-one>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,169 @@
+*{
+	padding:0;
+	margin:0;
+	text-decoration: none;
+	list-style:none;
+	box-sizing:border-box;
+}
+
+body{
+	font-family: montserrat;
+}
+
+nav{
+	background:#009879;
+	height:80px;
+	width:100%;
+}
+
+label.logo{
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+
+nav ul{
+	float:right;
+	margin-right:20px;
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+nav ul li a{
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;	
+	text-transform: uppercase;
+}
+
+a:hover{
+	background: #4b9aa6;
+	transition: .5s;
+}
+
+.content-table{
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-size: 0.9em;
+	min-width: 400px;
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.15)
+}
+
+.content-table thead tr{
+	background-color: #009879;
+	color: #ffffff;
+	text-align: left;
+	font-weight:bold;
+}
+
+.content-table th,
+.content-table td{
+	padding:1rem 5rem;
+	
+}
+
+
+.task-table{
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-size: 0.9em;
+	min-width: 400px;
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.15)
+}
+
+.task-table thead tr{
+	background-color: #009879;
+	color: #ffffff;
+	text-align: left;
+	font-weight:bold;
+}
+
+.task-table th,
+.task-table td{
+	padding:10px 40px;
+	
+}
+
+.projects-table{
+	margin: 2% 0 0 2%;
+}
+
+.content-table tbody tr{
+	border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even){
+	background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type{
+	border-bottom: 2px solid #009879;
+}
+
+.task-table tbody tr{
+	border-bottom: 1px solid #dddddd;
+}
+
+.task-table tbody tr:nth-of-type(even){
+	background-color: #f3f3f3;
+}
+
+.task-table tbody tr:last-of-type{
+	border-bottom: 2px solid #009879;
+}
+
+#addproject{
+	width:8%;
+	height:21px;
+	background-color: #009879;
+	color: white;
+}
+
+.minus{
+	width:50px;
+	height:21px;
+	background-color: #009879;
+	color: white;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.projectinsert{
+	margin-left: 128px;
+}
+
+.taskinsert{
+	margin-left: 10%;
+    margin-top: 5%;
+}
+
+input.tablebtn{
+	border:0px;
+	font-family: times;
+	font-size: initial;
+	
+}
+
+.commentssection{
+	margin: 2rem 0 0 28rem	;
+}
+
+#addtask{
+	width: 8%;
+    height: 21px;
+    background-color: #009879;
+    color: white;
+    margin-left: 1rem;
+}
+
