@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 19 Apr 2020, 15:55:06 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.webtools.pojo.Member" table="MEMBER">
+        <id name="memberID" type="int">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="memberName" type="java.lang.String">
+            <column name="MemberName" />
+        </property>
+        <property name="projectName" type="java.lang.String">
+            <column name="ProjectName" />
+        </property>
+        <property name="careerLevel" type="java.lang.String">
+            <column name="CareerLevel" />
+        </property>
+        <many-to-one name="project" class="com.webtools.pojo.Project" fetch="join">
+            <column name="ProjectID" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>
